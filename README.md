@@ -1,1 +1,17 @@
-# bitcoincashcn.github.io
+# Bitcoin Cash Clashic
+
+关于项目的详细信息请从查阅WIKI页面
+
+比特币现金Bitcoin ABC 0.15.1版本，作为BCH的原链，在中文社区几乎没有任何声音，这是被某种利益关系刻意隐瞒的一条链条。
+
+前进：我们正在寻找志愿者。
+
+不限于以下角色：
+
+软件工程师
+
+社交媒体组织者
+
+与交易所/矿工进行外联沟通
+
+如果您想自愿参加，请联系bitcoincashCN@gmail.com。
