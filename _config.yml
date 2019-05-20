@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: BitcoinCash Classic比特币现金原链
-brief-intro: 历史和未来
+title: "BitcoinCash Classic比特币现金原链"
+brief-intro: "历史和未来"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bitcoincashcn.github.io" # the base hostname & protocol for your site
 
@@ -19,11 +19,11 @@ permalink: /:year/:month/:day/:title/
 github_username:  bitcoincashcn
 email: bitcoincashcn@gmail.com
 # weibo_username: 
-zhihu_username: 古土雷柏
+zhihu_username: "古土雷柏"
 # linkedIn_username: 
 # dribbble_username:
 
-description_footer: 本站记录比特币现金原链的社区化实验！
+description_footer: "本站记录比特币现金原链的社区化实验！"
 
 # comments
 # two ways to comment, only choose one, and use your own short name
