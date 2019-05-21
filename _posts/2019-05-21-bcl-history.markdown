@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "比特币现金原链的历史概况"
-date:   2019年5月21日
+date:   2019-05-21
 categories: 历史追溯
 tags: BCH Clashic BCH原链
 ---
