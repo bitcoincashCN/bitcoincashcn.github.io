@@ -26,15 +26,15 @@ BCL是BCH（比特币现金）的原链分叉币。因2017年11月13日，BCH（
 BCL链条在2017年11月13号之前的名称为BCH，在此之后更名为BCL（Bcash、BitcoinClashic）。而2017年11月13号产生的新链条，目前名称为BCH。
 
 # 媒体和社区报道
-1.[bitcoin.com](https://news.bitcoin.com/a-true-network-or-troll-a-look-at-the-bitcoin-clashic-project/ "") **A True Network or Troll? A Look at the “Bitcoin Clashic” **
+1.[bitcoin.com](https://news.bitcoin.com/a-true-network-or-troll-a-look-at-the-bitcoin-clashic-project/) **A True Network or Troll? A Look at the “Bitcoin Clashic” **
 
-2.[vice.com](https://motherboard.vice.com/en_us/article/pa345z/meet-bitcoin-clashic-a-weird-bitcoin-cash-fork-rebellion "") **Meet 'Bitcoin Clashic,' a Weird and Totally Unexpected Cryptocurrency Rebellion**
+2.[vice.com](https://motherboard.vice.com/en_us/article/pa345z/meet-bitcoin-clashic-a-weird-bitcoin-cash-fork-rebellion) **Meet 'Bitcoin Clashic,' a Weird and Totally Unexpected Cryptocurrency Rebellion**
 
-3.[cointelegraph.com](https://cointelegraph.com/news/its-not-bitcoin-classic-or-bitcoin-cash-its-bitcoin-clashic "") **It’s Not Bitcoin Classic, Or Bitcoin Cash. It’s Bitcoin Clashic!**
+3.[cointelegraph.com](https://cointelegraph.com/news/its-not-bitcoin-classic-or-bitcoin-cash-its-bitcoin-clashic) **It’s Not Bitcoin Classic, Or Bitcoin Cash. It’s Bitcoin Clashic!**
 
-4.[bitcoinist.com](http://bitcoinist.com/bitcoin-clashic-bitcoin-cash-fork/ "") **A NEW BITCOIN CLASH CLASSIC IS BORN?** 
+4.[bitcoinist.com](http://bitcoinist.com/bitcoin-clashic-bitcoin-cash-fork/) **A NEW BITCOIN CLASH CLASSIC IS BORN?** 
 
-5.[bitcoinexchangeguide.com](https://bitcoinexchangeguide.com/bitcoin-clashic/ "") **Bitcoin Clashic – How Satoshi’s Bitcoin Classic Is Clashing w/ BCH?**
+5.[bitcoinexchangeguide.com](https://bitcoinexchangeguide.com/bitcoin-clashic/) **Bitcoin Clashic – How Satoshi’s Bitcoin Classic Is Clashing w/ BCH?**
 
 6.[btcmanager.com](https://btcmanager.com/bitcoin-clashic-serious-crypto) **Bitcoin Clashic: Serious Cryptocurrency Or Artful Trolling?**
 
