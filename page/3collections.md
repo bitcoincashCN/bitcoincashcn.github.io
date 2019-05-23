@@ -29,7 +29,7 @@ type: page
 * [匿名网站](http://bitcoinclashic.org/)
 * [第一个开发者的github](https://github.com/Bitcoin-Clashic)
 * [原链出块时的Twitter](https://twitter.com/BitcoinClashic)
-
+* [Discord中文社区](https://discord.gg/gZSjSax)
 
 
 ## Comments
