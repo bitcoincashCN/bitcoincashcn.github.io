@@ -166,6 +166,24 @@ Bitcoin is not connected! (code -9)
 
 是因为节点刚启动，还没有与其他节点连接，稍等一下即可。在控制台的网路里面可以看到节点的连接情况。
 
+## 3.队列深度超出
+
+bfgminer如果无法启动，在浏览器检查一下：
+
+http://127.0.0.1:8332/#getcbaddr
+
+如显示，则为正常：
+
+JSONRPC server handles only POST requests
+
+如显示：
+
+Work queue depth exceeded
+
+则遇到了RPC队列深度超出的问题（挖矿速度太快），可以在启动bitcoin-qt（或bitcoind）加上配置参数：
+
+`rpcworkqueue=100`
+
 # 四、挖矿技巧
 
 ## 1.利用EDA降低挖矿难度的技巧
