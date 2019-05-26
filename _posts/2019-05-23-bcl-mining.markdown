@@ -111,8 +111,37 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 ## 方法2：矿机本地单机挖矿
 
-待续：正在寻找1台矿机完成此部分实验
+前两步与方法1一样。
 
+**3.启动挖矿软件**
+
+将bfgminer命令中的“--no-stratum”参数改为“--stratum-port=3333”
+
+`bfgminer -o http://127.0.0.1:8332/#getcbaddr -u x -p x --stratum-port=3333 -S opencl:auto --verbose --coinbase-addr 18YRSL5naB4r3od4zqZ8RWZHXrRYdzrH8W --coinbase-sig "xxx"`
+
+启动成功后，在CMD命令行下可以看到：
+```
+C:\Users\user>netstat -na | find "3333"
+  TCP    0.0.0.0:3333           0.0.0.0:0              LISTENING
+```
+
+**4.配置矿机**
+
+如下图所示，配置矿机即可：
+
+![图片描述](https://bitcoincashcn.github.io/pic/bfgminer.PNG)
+
+URL设置为：***[运行bfgminer的IP地址]*:3333**
+
+或者：**stratum+tcp://*[运行bfgminer的IP地址]*:3333**
+
+Worker和Password均设置为x即可。
+
+其中IP地址改为运行bfgminer的电脑IP（该电脑需要关闭防火墙）。
+
+运行正常的话，在bfgminer窗口可以看到“PXY 0：”，即为矿机的算力：
+
+![图片描述](https://bitcoincashcn.github.io/pic/bfgminer2.PNG)
 
 # 三、常见问题解决
 
