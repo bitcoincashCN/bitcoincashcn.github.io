@@ -110,6 +110,7 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 `bfgminer -o http://127.0.0.1:8332/#getcbaddr -u x -p x --no-stratum -S opencl:auto --verbose --generate-to 1HxpKABeYVKdKw9C175oJ5CYmA7YibDy6B --coinbase-sig "bitcoincashcn.github.io" --net-delay`
 
 --generate-to 替换为自己的地址（不过据测试，每次钱包会自动生成新的Coinbase地址，该地址貌似设置与否没有意义）
+--no-submit-stale 算力较大的时候建议加上这个参数，减少无效块拒绝。
 
 启动正常的话，可以看到实时算力和运算日志。
 
