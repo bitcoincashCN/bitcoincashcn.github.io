@@ -121,7 +121,7 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 将bfgminer命令中的“--no-stratum”参数改为“--stratum-port=3333”
 
-`bfgminer -o http://127.0.0.1:8332/#getcbaddr -u x -p x --stratum-port=3333 -S opencl:auto --verbose --coinbase-addr 18YRSL5naB4r3od4zqZ8RWZHXrRYdzrH8W --coinbase-sig "xxx"`
+`bfgminer -o http://127.0.0.1:8332/#getcbaddr -u x -p x --stratum-port=3333 -S opencl:auto --verbose --generate-to 1HxpKABeYVKdKw9C175oJ5CYmA7YibDy6B --coinbase-sig "bitcoincashcn.github.io" --net-delay`
 
 启动成功后，在CMD命令行下可以看到：
 ```
