@@ -23,6 +23,8 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 **3.手动添加0.15.1版本的节点(可选)**
 
+因为现在节点不多，为了加速同步，建议手动添加若干个节点。
+
 * [bitnode.earn.com](https://bitnodes.earn.com/nodes/)
 
 这里面找到Bitcoin ABC 0.15.1的节点地址，然后在钱包控制台添加节点：
@@ -30,6 +32,8 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 `addnode "5.9.151.109:9333" add`
 
 `addnode "148.251.68.170:8333" add`
+
+`addnode "101.200.202.108:8333" add`
 
 **4.运行getblocktemplate正常**
 
@@ -103,9 +107,9 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 运行命令：
 
-`bfgminer -o http://127.0.0.1:8332/#getcbaddr -u x -p x --no-stratum -S opencl:auto --verbose --coinbase-addr 18YRSL5naB4r3od4zqZ8RWZHXrRYdzrH8W --coinbase-sig "xxx"`
+`bfgminer -o http://127.0.0.1:8332/#getcbaddr -u x -p x --no-stratum -S opencl:auto --verbose --generate-to 1HxpKABeYVKdKw9C175oJ5CYmA7YibDy6B --coinbase-sig "bitcoincashcn.github.io" --net-delay`
 
---coinbase-addr 替换为自己的地址
+--generate-to 替换为自己的地址（不过据测试，每次钱包会自动生成新的Coinbase地址，该地址貌似设置与否没有意义）
 
 启动正常的话，可以看到实时算力和运算日志。
 
@@ -142,6 +146,25 @@ Worker和Password均设置为x即可。
 运行正常的话，在bfgminer窗口可以看到“PXY 0：”，即为矿机的算力：
 
 ![图片描述](https://bitcoincashcn.github.io/pic/bfgminer2.PNG)
+
+
+## 方法3：小型挖矿设备单机挖矿
+
+前3个步骤与方法2一致
+
+**4.配置小型矿机**
+**Antrouter蚂蚁路由器（型号R1-BTC）**
+
+* ssh登录该路由器用户名root (默认密码 : root)
+* vi /etc/init.d/cgminer
+* 注释掉（#）PARAMS="$AOPTIONS $POOL1 $POOL2 $POOL3 --api-listen --api-network --version-file /usr/bin/compile_time --queue 10"
+* 加入一行PARAMS="$AOPTIONS -o 10.3.9.227:3333 -u x -p x" （IP地址替换为运行bfgminer的电脑IP）
+* 重启root@antRouter:~# reboot
+
+修改的配置文件如下图所示：
+
+![图片描述](https://bitcoincashcn.github.io/pic/cgminer.PNG)
+
 
 # 三、常见问题解决
 
