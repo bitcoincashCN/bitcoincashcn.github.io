@@ -207,7 +207,7 @@ Work queue depth exceeded
 
 则遇到了RPC队列深度超出的问题（挖矿速度太快），可以在启动bitcoin-qt（或bitcoind）加上配置参数：
 
-`rpcworkqueue=100`
+`-rpcworkqueue=100`
 
 # 四、挖矿技巧
 
