@@ -19,11 +19,11 @@ tags: BCH Clashic BCH原链 操作教程 最长链
 
 比特币白皮书并没有判断最长链的代码实现例子，早期比特币代码也比较简单，只是按照区块高度判定最长链，这种判定方法已经被废弃。现在判定最长链是依据“累计难度（工作量）”来做计算，每一个区块会累积chainwork数值，区块的难度系数越高累积的chainwork越快，具体算法举例如下：
 
-区块1：难度1 chainwork=0
-区块2：难度1 chainwork=1
-区块3：难度1 chainwork=2
-区块4：难度1 chainwork=3
-区块5：难度1 chainwork=4
+- 区块1：难度1 chainwork=0
+- 区块2：难度1 chainwork=1
+- 区块3：难度1 chainwork=2
+- 区块4：难度1 chainwork=3
+- 区块5：难度1 chainwork=4
 
 依次类推。
 
