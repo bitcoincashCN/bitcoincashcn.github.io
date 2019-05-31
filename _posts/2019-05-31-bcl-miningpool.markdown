@@ -169,3 +169,9 @@ a2ensite ckpool.xuexizu.cn.conf
 ```
 http://ckpool.xuexizu.cn
 ```
+
+# 三、矿工设置
+
+* stratum+tcp://ckpool.xuexizu.cn:3333
+* 用户名：1HxpKABeYVKdKw9C175oJ5CYmA7YibDy6B (改为自己接收挖矿奖励的地址）
+* 密码：x（随意）
