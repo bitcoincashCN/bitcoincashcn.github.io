@@ -100,7 +100,9 @@ systemctl enable apache2
 测试http://10.1.101.33/test.php
 
 * 设置网站
+
 建立配置文件：/etc/apache2/sites-available/ckpool.xuexizu.cn.conf
+
 ```
 <VirtualHost *:80> 
   ServerAdmin gotolab@gmail.com
@@ -111,6 +113,7 @@ systemctl enable apache2
   CustomLog /home/BCL/logs/logs/access.log combined
  </VirtualHost>
 ```
+
 * 修改/etc/apache2/apache2.conf
 否则没有以上路径的访问权限。
 
