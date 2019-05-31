@@ -83,21 +83,28 @@ make install
 注意：IP地址和路径为举例，实际变更为本地地址和路径。
 
 * 安装apache和php
+
 ```
 apt install apache2
 apt install php
 apt-get install libapache2-mod-php
 /etc/init.d/apache2 restart
 ```
+
 创建test.php脚本，保存到/var/www/html目录下,脚本内容为：
+
 ```
 <?php
 echo "Hellow World";
 ?>
 ```
+
 * 重启apache服务:
+
+```
 systemctl enable apache2
-测试http://10.1.101.33/test.php
+访问：http://10.1.101.33/test.php
+```
 
 * 设置网站
 
@@ -114,8 +121,7 @@ systemctl enable apache2
  </VirtualHost>
 ```
 
-* 修改/etc/apache2/apache2.conf
-否则没有以上路径的访问权限。
+* 修改/etc/apache2/apache2.conf，否则没有以上路径的访问权限。
 
 ```
 <Directory />
@@ -125,28 +131,35 @@ systemctl enable apache2
     allow from all
 </Directory>
 ```
+
 * 如使用域名，建立静态映射（可选）
+
 ```
 /etc/hosts
 10.1.101.33 ckpool.xuexizu.cn
 ```
 
 * 建立目录
+
 ```
 mkdir /home/BCL/logs/logs/
 ```
+
 * 在/home/BCL/logs目录制作index.html
 
 [下载参考模板](http://solo.ckpool.org/index.html)
 
 * 启用站点
+
 ```
 关闭默认站点：
 a2dissite 000-default.conf
 启用站点：
 a2ensite ckpool.xuexizu.cn.conf
 ```
+
 * 测试访问
+
 ```
 http://ckpool.xuexizu.cn
 ```
