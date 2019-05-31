@@ -26,6 +26,8 @@ rpcallowip=0.0.0.0/0
 rpcbind=127.0.0.1
 datadir=/home/BCL/block/
 ```
+注意：/home/BCL/block为测试用路径，如采用其它路径，以下配置根据实际路径修改。
+
 * 用root账号运行bitcoind进程，完成区块数据同步
 * 用./bitcoin-cli getnewaddress获得矿池出块的地址
 
