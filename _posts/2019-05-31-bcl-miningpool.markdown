@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "BCH原链矿池搭建教程"
-date:   2019-05-21
+date:   2019-05-31
 categories: 教程和实验
 tags: BCH Clashic BCH原链 操作教程 矿池 挖矿
 ---
