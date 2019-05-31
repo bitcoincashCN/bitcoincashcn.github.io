@@ -149,7 +149,11 @@ mkdir /home/BCL/logs/logs/
 
 * 在/home/BCL/logs目录制作index.html
 
-[下载参考模板](http://solo.ckpool.org/index.html)
+[下载静态模板](http://solo.ckpool.org/index.html)
+
+[动态模板参考](http://ckpool.org/)
+
+静态模板很简单，而动态模板我也没找到设置说明书。
 
 * 启用站点
 
