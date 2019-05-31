@@ -1,0 +1,149 @@
+---
+layout: post
+title:  "BCH原链矿池搭建教程"
+date:   2019-05-21
+categories: 教程和实验
+tags: BCH Clashic BCH原链 操作教程 矿池 挖矿
+---
+
+* content
+{:toc}
+
+BCH原链可以直接复用BTC/BCH的矿池代码库，搭建矿池作为基础设施。
+
+# 一、矿池搭建准备
+
+* 测试环境系Ubuntu Server 18.04.2 LTS（64Bit）
+* 设置bitcoin.conf配置文件（/root/.bitcoin/bitcoin.conf），建立相关数据目录：
+```
+daemon=1
+rpcconnect=127.0.0.1
+rpcuser=x
+rpcpassword=x
+rpcport=8332
+rpcthreads=8
+rpcallowip=0.0.0.0/0
+rpcbind=127.0.0.1
+datadir=/home/BCL/block/
+```
+* 用root账号运行bitcoind进程，完成区块数据同步
+* 用./bitcoin-cli getnewaddress获得矿池出块的地址
+
+# 二、矿池的安装
+
+## CKPOOL
+
+### 1、安装CKPOOL（SPLNS版本）
+
+注意：/home/BCL/ckpool.conf为测试用路径，如采用其它路径，以下配置根据实际路径修改。
+
+* 用sudo运行以下命令
+```
+apt-get install git   #安装git
+git clone https://bitbucket.org/ckolivas/ckpool-splns.git #源代码下载
+apt-get install build-essential libpq-dev autoconf automake libtool #安装相关的库
+./autogen.sh
+./configure
+make
+make install
+```
+* 编辑ckpool.conf文件
+
+```
+{
+"btcd" :  [
+        {
+                "url" : "localhost:8332",
+                "auth" : "x",
+                "pass" : "x",
+                "notify" : false
+        }
+],
+"btcaddress" : "128sKcXJV2zAhPx2ExspTAc9UCoewBaqMH",   #替换为本地钱包地址
+"btcsig" : "/mined by bitcoincashcn/",
+"blockpoll" : 100,
+"update_interval" : 30,
+"serverurl" : "10.1.101.33:3333",   #替换为矿池外网地址
+"mindiff" : 1,
+"startdiff" : 128,
+"logdir" : "logs"
+}
+```
+
+* 启动运行CKPOOL
+
+不加nohup则在前台运行，终端断开进程终止。
+
+```
+ nohup ckpool -A -c /home/BCL/ckpool.conf &
+```
+
+### 2、设置CKPOOL状态查询Web服务器
+
+注意：IP地址和路径为举例，实际变更为本地地址和路径。
+
+* 安装apache和php
+```
+apt install apache2
+apt install php
+apt-get install libapache2-mod-php
+/etc/init.d/apache2 restart
+```
+创建test.php脚本，保存到/var/www/html目录下,脚本内容为：
+```
+<?php
+echo "Hellow World";
+?>
+```
+* 重启apache服务:
+systemctl enable apache2
+测试http://10.1.101.33/test.php
+
+* 设置网站
+建立配置文件：/etc/apache2/sites-available/ckpool.xuexizu.cn.conf
+```
+<VirtualHost *:80> 
+  ServerAdmin gotolab@gmail.com
+  ServerName ckpool.xuexizu.cn
+  ServerAlias ckpool.xuexizu.cn
+  DocumentRoot /home/BCL/logs/
+  ErrorLog /home/BCL/logs/logs/error.log 
+  CustomLog /home/BCL/logs/logs/access.log combined
+ </VirtualHost>
+```
+* 修改/etc/apache2/apache2.conf
+否则没有以上路径的访问权限。
+
+```
+<Directory />
+    Options FollowSymLinks
+    AllowOverride None
+    Order deny,allow
+    allow from all
+</Directory>
+```
+* 如使用域名，建立静态映射（可选）
+```
+/etc/hosts
+10.1.101.33 ckpool.xuexizu.cn
+```
+
+* 建立目录
+```
+mkdir /home/BCL/logs/logs/
+```
+* 在/home/BCL/logs目录制作index.html
+
+[下载参考模板](http://solo.ckpool.org/index.html)
+
+* 启用站点
+```
+关闭默认站点：
+a2dissite 000-default.conf
+启用站点：
+a2ensite ckpool.xuexizu.cn.conf
+```
+* 测试访问
+```
+http://ckpool.xuexizu.cn
+```
