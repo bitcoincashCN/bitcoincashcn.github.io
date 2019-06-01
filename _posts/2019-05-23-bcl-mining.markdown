@@ -128,7 +128,7 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 将bfgminer命令中的“--no-stratum”参数改为“--stratum-port=3333”
 
-`bfgminer -o http://127.0.0.1:8332/#getcbaddr -u x -p x --stratum-port=3333 -S opencl:auto --verbose --generate-to 1HxpKABeYVKdKw9C175oJ5CYmA7YibDy6B --coinbase-sig "bitcoincashcn.github.io" --net-delay`
+`bfgminer -o http://127.0.0.1:8332/#getcbaddr -u x -p x --stratum-port=3333 -S opencl:auto --verbose --generate-to 1HxpKABeYVKdKw9C175oJ5CYmA7YibDy6B --coinbase-sig "bitcoincashcn.github.io" --net-delay --no-submit-stale`
 
 启动成功后，在CMD命令行下可以看到：
 ```
@@ -147,6 +147,14 @@ URL设置为：***[运行bfgminer的IP地址]*:3333**
 或者：**stratum+tcp://*[运行bfgminer的IP地址]*:3333**
 
 Worker和Password均设置为x即可。
+
+比如在本机运行：
+
+`cgminer：cgminer.exe  -o 127.0.0.1:3333 -u x -p x`
+
+蚂蚁U3矿机的.bat文件改为：
+
+`cgminer.exe  --bmsc-options 115200:0.57 -o 127.0.0.1:3333 -u x -p x --bmsc-voltage 0800  --bmsc-freq 1286`
 
 其中IP地址改为运行bfgminer的电脑IP（该电脑需要关闭防火墙）。
 
