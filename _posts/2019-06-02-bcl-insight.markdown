@@ -108,6 +108,8 @@ port: 服务端口，默认
 
 * http://[服务器IP]:3001/insight/
 
+区块还没同步完成的情况：
 
+![图片描述](https://bitcoincashcn.github.io/pic/insight.PNG)
 
 
