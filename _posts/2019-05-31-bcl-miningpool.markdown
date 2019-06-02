@@ -68,9 +68,10 @@ make install
 "serverurl" : "10.1.101.33:3333",   #替换为矿池外网地址
 "mindiff" : 1,
 "startdiff" : 128,
-"logdir" : "logs"
+"logdir" : "/home/BCL/logs"
 }
 ```
+logdir设置为固定目录，以便第二步设置Web服务器。
 
 * 启动运行CKPOOL
 
