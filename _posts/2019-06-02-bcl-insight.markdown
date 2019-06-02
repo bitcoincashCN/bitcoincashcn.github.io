@@ -110,11 +110,11 @@ port: 服务端口，默认
 
 区块还没同步完成的情况：
 
-![图片描述](https://bitcoincashcn.github.io/pic/insight.PNG)
+![](https://bitcoincashcn.github.io/pic/insight.PNG)
 
 # 附件、安装Insight浏览器（第二种办法）
 
-## 安装nodejs
+## 0、安装nodejs
 
 见【第一部分】
 
