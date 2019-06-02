@@ -112,4 +112,103 @@ port: 服务端口，默认
 
 ![图片描述](https://bitcoincashcn.github.io/pic/insight.PNG)
 
+# 附件、安装Insight浏览器（第二种办法）
+
+## 安装nodejs
+
+见【第一部分】
+
+## 1、安装bitcore
+```
+npm install -g bitcore
+```
+
+## 2、建立3个配置文件
+
+在~/.bitcoin目录建立以下三个配置文件
+
+```
+cd ~/
+mkdir .bitcoin
+cd .bitcoin
+vim bitcoin.conf
+```
+* bitcoin.conf文件 
+```
+server=1
+testnet=1
+whitelist=127.0.0.1
+txindex=1
+addressindex=1
+timestampindex=1
+spentindex=1
+zmqpubrawtx=tcp://127.0.0.1:28332
+zmqpubhashblock=tcp://127.0.0.1:28332
+rpcallowip=127.0.0.1
+uacomment=bitcore
+rpcuser=bitcoin
+rpcpassword=local321
+```
+
+* bitcore-node.json文件
+
+```
+{
+  "network": "livenet",
+  "port": 3001,
+  "services": [
+    "bitcoind",
+    "insight-api",
+    "insight-ui",
+    "web"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "spawn": {
+        "datadir": "/home/root/.bitcoin",
+        "exec": "/home/root/.bitcoin/bitcoind"
+      }
+    }
+  }
+}
+```
+
+* package.json文件
+
+```
+{
+  "description": "A full Bitcoin node build with Bitcore",
+  "repository": "https://github.com/user/project",
+  "license": "MIT",
+  "readme": "README.md",
+  "dependencies": {
+    "bitcore-lib": "^v0.13.19",
+    "bitcore-node": "^3.1.3",
+    "insight-api": "^0.4.3",
+    "insight-ui": "^0.4.0"
+  }
+}
+```
+
+## 3、拷贝bitcoind
+
+拷贝编译好的bitcoind运行文件到~/.bitcoin目录
+
+## 4、安装
+
+在~/.bitcoin目录运行
+
+```
+npm install
+```
+
+## 5、启动进程
+
+```
+bitcored
+```
+
+## 6、测试运行
+
+* http://[服务器IP]:3001/insight/
 
