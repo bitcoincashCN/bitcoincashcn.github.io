@@ -111,7 +111,6 @@ nohup ../bitcore-node start &
 ```
 datadir: 区块文件保存目录
 port: 服务端口，默认
-
 ```
 * 区块配置文件mynode/data/bitcoin.conf
 
@@ -127,11 +126,25 @@ port: 服务端口，默认
 
 # 附件、安装Insight浏览器（第二种办法）
 
+bitcore安装不支持root帐号，如果出现权限报错，使用以下命令设置目录权限：
+
+```
+Execute as a ubuntu user (non-root)
+For each directory, change user from root to ubuntu
+$ sudo chown ubuntu:staff <directoryName>
+```
+
 ## 0、安装nodejs
 
-见【第一部分】
+见【第一部分】,但bitcore需要更高版本：
+
+```
+nvm install v10.*
+nvm use 10
+```
 
 ## 1、安装bitcore
+
 ```
 npm install -g bitcore
 ```
@@ -178,8 +191,8 @@ rpcpassword=local321
   "servicesConfig": {
     "bitcoind": {
       "spawn": {
-        "datadir": "/home/root/.bitcoin",
-        "exec": "/home/root/.bitcoin/bitcoind"
+        "datadir": "~/.bitcoin",
+        "exec": "~/.bitcoin/bitcoind"
       }
     }
   }
