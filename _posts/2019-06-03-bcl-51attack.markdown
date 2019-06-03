@@ -17,6 +17,8 @@ tags: BCH Clashic BCH原链 操作教程 51%攻击 区块重写
 
 ![2018年12月的762048区块](https://bitcoincashcn.github.io/pic/762048-old.PNG)
 
+![2019年6月的762048区块](https://bitcoincashcn.github.io/pic/762048-new.PNG)
+
 # 一、实验环境准备
 
 ## 1、物理环境
