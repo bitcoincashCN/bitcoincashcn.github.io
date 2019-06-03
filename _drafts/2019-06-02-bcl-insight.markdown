@@ -16,13 +16,15 @@ tags: BCH Clashic BCH原链 操作教程 区块浏览器
 ## 安装NPM
 
 ```
-apt install npm
+sudo apt install npm
 ```
 
 ## 安装nvm
 
 执行：
-`wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash`
+```
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+```
 
 再执行：
 ```
@@ -133,16 +135,35 @@ Execute as a ubuntu user (non-root)
 For each directory, change user from root to ubuntu
 $ sudo chown ubuntu:staff <directoryName>
 ```
-
-## 0、安装nodejs
-
-见【第一部分】,但bitcore需要更高版本：
+实际我用的命令是：
 
 ```
-nvm install v10.*
-nvm use 10
+sudo chmod -R 777 /usr/local/
 ```
 
+
+## 0、安装NPM
+
+```
+sudo apt install npm
+```
+
+## 安装nodejs
+
+```
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+```
+
+再执行：
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+```
+
+执行完输入nvm查看是否安装完成。
+```
+nvm install 0.12.18
+```
 ## 1、安装bitcore
 
 ```
