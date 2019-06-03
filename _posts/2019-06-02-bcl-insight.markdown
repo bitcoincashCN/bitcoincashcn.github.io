@@ -100,6 +100,8 @@ bitcore.versionGuard = function(version) {  return;
 nohup ../bitcore-node start &
 ```
 
+服务器重启后，如果直接用root帐号运行报错，用户账号登录后运行sudo -s，再启动节点则正常。
+
 ## 8、配置文件说明
 
 * 默认区块文件保存在mynode/data/
