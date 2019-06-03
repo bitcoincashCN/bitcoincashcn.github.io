@@ -15,7 +15,9 @@ tags: BCH Clashic BCH原链 操作教程 区块浏览器
 
 ## 安装NPM
 
-`apt install npm`
+```
+apt install npm
+```
 
 ## 安装nvm
 
@@ -66,11 +68,16 @@ nvm use 4
 ## 5、安装insight-api和insight-ui
 
 运行以下命令安装依赖: 
-`../bitcore-node install https://github.com/satoshilabs/insight-api`
+
+```
+../bitcore-node install https://github.com/satoshilabs/insight-api
+```
 
 以及
 
-`../bitcore-node install insight-ui`
+```
+../bitcore-node install insight-ui
+```
 
 ## 6、设置只允许运行一个bitcore-lib实例
 
@@ -83,11 +90,15 @@ bitcore.versionGuard = function(version) {  return;
 
 回到 mynode 目录，运行以下命令启动工程：
 
-`../bitcore-node start`
+```
+../bitcore-node start
+```
 
 后台运行：
 
-`nohup ../bitcore-node start &`
+```
+nohup ../bitcore-node start &
+```
 
 ## 8、配置文件说明
 
