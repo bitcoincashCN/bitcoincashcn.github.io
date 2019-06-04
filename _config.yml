@@ -6,7 +6,7 @@
 
 # Site settings
 title: "BitcoinCash Classic"
-brief-intro: "Make BCH decentralized again"
+brief-intro: "Make BCH decentralized again!"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bitcoincashcn.github.io" # the base hostname & protocol for your site
 
