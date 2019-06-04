@@ -180,6 +180,25 @@ Worker和Password均设置为x即可。
 
 ![图片描述](https://bitcoincashcn.github.io/pic/cgminer.PNG)
 
+## 方法4：Nicehash租用算力
+
+* [Nicehash算力租用平台](https://www.nicehash.com)
+
+充值BTC之后，即可用BTC购买算力挖矿，Nicehas支持BCH原链的挖矿。
+
+* 设置BCH原链矿池
+
+【买家页面】-【我的矿池】-添加矿池设置，地址设置为自己的收币地址；设置完毕后，测试矿池连接：
+
+![图片描述](https://bitcoincashcn.github.io/pic/nicehash01.PNG)
+![图片描述](https://bitcoincashcn.github.io/pic/nicehash02.PNG)
+
+* 购买算力开挖
+
+进入【买家页面】-【市场】，如下图所示，选择算法以及上一步设置好的矿池，算力可大可小，单价按市场行情走，以图中为例，每天付0.0357BTC可以获得1PH算力一天（1PH=1000T），最低每天租用0.05PH（50T算力），也就是0.0357BTC可以租用20天的50T算力）；金额部分是设置总预算，比如输入0.357BTC，那么就可以跑200天50T算力。
+
+![图片描述](https://bitcoincashcn.github.io/pic/nicehash03.PNG)
+
 
 # 三、常见问题解决
 

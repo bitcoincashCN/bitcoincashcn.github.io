@@ -16,6 +16,7 @@ tags: BCH Clashic BCH原链 操作教程 区块浏览器
 ## 安装NPM
 
 ```
+sudo apt-get install build-essential libzmq3-dev
 sudo apt install npm
 ```
 
@@ -55,6 +56,10 @@ nvm use 4
 ## 2、安装依赖
 
 进入 bitcore-node 目录，运行 npm i 安装依赖，得到完整的 bitcore-node 工程；此时得到文件 bitcore-node/bin/bitcore-node；
+
+git clone https://github.com/osagga/bitcore-node-cash.git && cd bitcore-node-cash
+npm install
+./bin/bitcore-node start
 
 ## 3、复制bitcoind文件
 
