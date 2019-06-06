@@ -57,10 +57,6 @@ nvm use 4
 
 进入 bitcore-node 目录，运行 npm i 安装依赖，得到完整的 bitcore-node 工程；此时得到文件 bitcore-node/bin/bitcore-node；
 
-git clone https://github.com/osagga/bitcore-node-cash.git && cd bitcore-node-cash
-npm install
-./bin/bitcore-node start
-
 ## 3、复制bitcoind文件
 
 下载bitcoin-abc 0.15.1的钱包，将bitcoind 复制进 bitcore-node 目录，需要保证 bitcore-node/bin 下有 bitcoind 文件；
@@ -70,7 +66,7 @@ npm install
 
 运行 ./bitcore-node create mynode ；生成 mynode 目录(该步骤中产生的任何错误提示可以忽略)；
 
-进入 mynode 目录，打开 package.json 并将依赖中的 bitcore-node 删除；运行 npm i ，安装依赖；
+进入 mynode 目录，打开 package.json 并将依赖中的 bitcore-node 删除（上一行有个逗号要删除）；运行 npm i ，安装依赖；
 
 ## 5、安装insight-api和insight-ui
 
