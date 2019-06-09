@@ -32,7 +32,7 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 * [bitnode.earn.com](https://bitnodes.earn.com/nodes/)
 
-这里面找到Bitcoin ABC 0.15.1的节点地址，然后在钱包控制台添加节点：
+这里面找到Bitcoin ABC 0.15.1（或者Bitcoin ABC 0.14.6）的节点地址，然后在钱包控制台添加节点：
 
 ```
 addnode "5.9.151.109:9333" add
