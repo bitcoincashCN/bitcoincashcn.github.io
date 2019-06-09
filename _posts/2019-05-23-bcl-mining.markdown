@@ -34,11 +34,12 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 这里面找到Bitcoin ABC 0.15.1的节点地址，然后在钱包控制台添加节点：
 
-`addnode "5.9.151.109:9333" add`
-
-`addnode "148.251.68.170:8333" add`
-
-`addnode "101.200.202.108:8333" add`
+```
+addnode "5.9.151.109:9333" add
+addnode "104.198.86.113:8333" add
+addnode "101.200.202.108:8333" add
+addnode "35.247.161.53:8333" add
+```
 
 **4.运行getblocktemplate正常**
 
