@@ -3,7 +3,7 @@ layout: post
 title:  "BCH原链单机挖矿教程"
 date:   2019-05-23
 categories: 教程和实验
-tags: BCH Clashic BCH原链 操作教程 挖矿
+tags: BCH Clashic BCH原链 操作教程 挖矿 BCC
 ---
 
 * content
@@ -21,10 +21,10 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 大概有140GB，需要一段时间现在。也可以从网盘下载区块数据，解压后直接拷贝到区块目录下即可。
 
-* [百度网盘区块数据下载](https://pan.baidu.com/s/1P3QeQQYyDSjCBe8SM8r-EQ)
+* [百度网盘区块数据下载](https://pan.baidu.com/s/172fw2j-Kbwr_X3fhorzSKg)
 
-* 提取码：ppae
-
+* 提取码：hqsf
+ 
 
 **3.手动添加0.15.1版本的节点(可选)**
 
@@ -36,9 +36,19 @@ tags: BCH Clashic BCH原链 操作教程 挖矿
 
 ```
 addnode "5.9.151.109:9333" add
-addnode "104.198.86.113:8333" add
 addnode "101.200.202.108:8333" add
 addnode "35.247.161.53:8333" add
+```
+
+让每次启动自动添加节点，用记事本建立bitcoin.conf文件，保存到数据目录下，文件内容如下：
+
+```
+addnode=5.9.151.109:9333
+addnode=101.200.202.108:8333
+addnode=35.247.161.53:8333
+addnode=138.201.248.31:8333
+addnode=144.76.40.144:8333
+addnode=176.9.84.152:8333
 ```
 
 **4.运行getblocktemplate正常**
@@ -189,14 +199,14 @@ Worker和Password均设置为x即可。
 
 * 设置BCH原链矿池
 
-【买家页面】-【我的矿池】-添加矿池设置，地址设置为自己的收币地址；设置完毕后，测试矿池连接：
+【买家页面】-【我的矿池】-添加矿池设置，【用户名】设置为自己的收币地址；设置完毕后，测试矿池连接：
 
 ![图片描述](https://bitcoincashcn.github.io/pic/nicehash01.PNG)
 ![图片描述](https://bitcoincashcn.github.io/pic/nicehash02.PNG)
 
 * 购买算力开挖
 
-进入【买家页面】-【市场】，如下图所示，选择算法以及上一步设置好的矿池，算力可大可小，单价按市场行情走，以图中为例，每天付0.0357BTC可以获得1PH算力一天（1PH=1000T），最低每天租用0.05PH（50T算力），也就是0.0357BTC可以租用20天的50T算力）；金额部分是设置总预算，比如输入0.357BTC，那么就可以跑200天50T算力。
+进入【买家页面】-【市场】，如下图所示，选择算法以及上一步设置好的矿池，算力可大可小，单价按市场行情走（价格低租不到算力，价格高产生浪费），以图中为例，每天付0.0357BTC可以获得1PH算力一天（1PH=1000T），最低每天租用0.05PH（50T算力），也就是0.0357BTC可以租用20天的50T算力）；金额部分是设置总预算，比如输入0.357BTC，那么就可以跑200天50T算力。
 
 ![图片描述](https://bitcoincashcn.github.io/pic/nicehash03.PNG)
 
