@@ -35,15 +35,16 @@ datadir=/home/BCL/block/
 
 ## CKPOOL
 
-### 1、安装CKPOOL（SPLNS版本）
+### 1、安装CKPOOL
 
 注意：/home/BCL/ckpool.conf为测试用路径，如采用其它路径，以下配置根据实际路径修改。
 
 * 用sudo运行以下命令
 ```
 apt-get install git   #安装git
-git clone https://bitbucket.org/ckolivas/ckpool-splns.git #源代码下载
+git clone https://bitbucket.org/ckolivas/ckpool.git #源代码下载
 apt-get install build-essential libpq-dev autoconf automake libtool #安装相关的库
+cd ckpool
 ./autogen.sh
 ./configure
 make
@@ -118,9 +119,9 @@ systemctl enable apache2
   ServerAdmin gotolab@gmail.com
   ServerName ckpool.xuexizu.cn
   ServerAlias ckpool.xuexizu.cn
-  DocumentRoot /home/BCL/logs/
-  ErrorLog /home/BCL/logs/logs/error.log 
-  CustomLog /home/BCL/logs/logs/access.log combined
+  DocumentRoot /home/gotolab/logs/
+  ErrorLog /home/gotolab/logs/logs/error.log 
+  CustomLog /home/gotolab/logs/logs/access.log combined
  </VirtualHost>
 ```
 
@@ -131,8 +132,15 @@ systemctl enable apache2
     Options FollowSymLinks
     AllowOverride None
     Order deny,allow
-    allow from all
+    Allow from all
 </Directory>
+```
+
+如果访问继续报错，需要手动指定目录权限：
+
+```
+chown -R $USER:$USER /home/gotolab/logs/
+chmod -R 755 /home/gotolab/logs/
 ```
 
 * 如使用域名，建立静态映射（可选）
