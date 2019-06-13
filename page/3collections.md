@@ -33,7 +33,14 @@ type: page
 
 ## 矿池
 
-### http://btcc.xuexizu.cn:8000/
+### 矿池1
+* http://btcc.xuexizu.cn:8000/
+- Port: 3008, Diff: 64
+- Port: 3032, Diff: 8
+- Port: 3256, Diff: 4123456
+
+### 矿池2
+* http://bccjp.xuexizu.cn:8000/
 - Port: 3008, Diff: 64
 - Port: 3032, Diff: 8
 - Port: 3256, Diff: 4123456
