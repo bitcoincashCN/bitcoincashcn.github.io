@@ -24,7 +24,7 @@ BCH原链可以直接复用BTC/BCH的矿池代码库，搭建矿池作为基础�
 unomp的主体代码是2014、2015年开发完成的，要依赖nodeljs，而且还不能用最新的版本。
 ```
 sudo apt-get update
-apt-get install software-properties-common 
+sudo apt-get install software-properties-common 
 sudo apt-get install build-essential libssl-dev npm nodejs nodejs-legacy
 curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
 source ~/.profile
