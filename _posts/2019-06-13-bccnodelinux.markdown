@@ -44,7 +44,6 @@ usecashaddr=0
 zmqpubrawtx=tcp://127.0.0.2:28332
 zmqpubhashblock=tcp://127.0.0.2:28332
 addnode=5.9.151.109:9333
-addnode=101.200.202.108:8333
 addnode=104.198.86.113:8333
 addnode=35.247.161.53:8333
 ```
