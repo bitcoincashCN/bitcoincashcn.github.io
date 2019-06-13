@@ -50,9 +50,9 @@ tags: BCC 教程 新手入门 钱包安装 节点安装 数据同步 钱包使�
 ![图片描述](https://bitcoincashcn.github.io/pic/wallet04.png)
 ![图片描述](https://bitcoincashcn.github.io/pic/wallet05.png)
 
-### 3.2下载配置文件【bitcoin.conf】
+### 3.2下载配置文件
 
-下载后直接复制到【BCC钱包】文件夹下。
+下载【bitcoin.conf】后直接复制到【BCC钱包】文件夹下。
 
 * [百度网盘配置文件下载](https://pan.baidu.com/s/1o1eFnOTvVaABuvNyCUgsdQ)
 * 提取码：hrhw
