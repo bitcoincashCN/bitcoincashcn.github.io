@@ -11,6 +11,14 @@ tags: BCH Clashic BCH原链 操作教程 矿池 挖矿 BCC
 
 BCH原链可以直接复用BTC/BCH的矿池代码库，搭建矿池作为基础设施。
 
+# 注意事项
+
+* 以下矿池的地址和域名替换为自己搭建的服务器地址和域名（如果没有域名，就直接用IP）
+* 安装矿池的前提是服务器上已经运行了节点，并且同步完成数据。
+* 矿池的出块地址和私钥，请注意保管和备份。
+* 这个矿池好像不会自动分配，适合solo单挖，挖完所有币都在出块地址上。
+* 另外有SPLNS版本，有更完善的分配机制，适合多矿工协作，有能力的研究一下。
+
 # 一、矿池搭建准备
 
 * 测试环境系Ubuntu Server 18.04.2 LTS（64Bit）
@@ -184,3 +192,25 @@ http://ckpool.xuexizu.cn
 * stratum+tcp://ckpool.xuexizu.cn:3333
 * 用户名：1HxpKABeYVKdKw9C175oJ5CYmA7YibDy6B (改为自己接收挖矿奖励的地址）
 * 密码：x（随意）
+
+# 四、矿池的基本维护
+
+## 查看矿池余额
+
+```
+ ./bitcoin-cli getwalletinfo
+{
+  "walletversion": 130000,
+  "balance": 0.00000000,
+  "unconfirmed_balance": 0.00000000,
+  "immature_balance": 0.00000000,
+  "txcount": 0,
+  "keypoololdest": 1560044643,
+  "keypoolsize": 100,
+  "paytxfee": 0.00000000,
+  "hdmasterkeyid": "61648c21139a50081c325e2821944f8f22be3dba"
+}
+```
+immature_balance：已经出块但还未成熟的余额，比特币规定出块后100个块，铸币成熟方可使用
+
+
