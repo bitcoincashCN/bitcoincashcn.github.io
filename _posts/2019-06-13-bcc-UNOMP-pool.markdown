@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "BCC矿池搭建教程"
+title:  "BCC搭建UNOMP矿池教程"
 date:   2019-06-13
 categories: 教程和实验
 tags: BCH Clashic BCH原链 操作教程 矿池 挖矿 BCC UNOMP
@@ -13,7 +13,7 @@ BCH原链可以直接复用BTC/BCH的矿池代码库，搭建矿池作为基础�
 
 # 一、矿池搭建准备
 
-* 测试环境系Ubuntu Server 18.04.2 LTS（64Bit）
+* 测试环境系Ubuntu Server 16.04 LTS（64Bit）
 * 已经安装完BCC节点，并且完成区块同步
 * 用./bitcoin-cli getnewaddress获得矿池出块的地址
 * 需要用到2个地址， 一个用于出块，一个用于收取手续费
@@ -23,6 +23,8 @@ BCH原链可以直接复用BTC/BCH的矿池代码库，搭建矿池作为基础�
 ## 安装nodejs、npm等程序
 unomp的主体代码是2014、2015年开发完成的，要依赖nodeljs，而且还不能用最新的版本。
 ```
+sudo apt-get update
+apt-get install software-properties-common 
 sudo apt-get install build-essential libssl-dev npm nodejs nodejs-legacy
 curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
 source ~/.profile
@@ -77,7 +79,9 @@ sudo service redis_6379 stop
 ```
 sudo update-rc.d redis_6379 defaults
 ```
-修改config.json
+## 配置文件
+
+### 修改config.json
 上面就完成了整个安装过程，为了将程序跑起来，需要修改一些配置文件。首先在unomp文件夹下找到config.json.example文件，复制为config.json。
 ```
 cp config.json.example config.json
@@ -120,8 +124,8 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
         "enabled": true,
         "host": "0.0.0.0",
         "siteTitle": "UNOMP Beta by shenlb", ## 网站的标题
-        "port": 8080, ## 改成自己喜欢的端口，阿里云还需要配置安全组，放开相应端口
-        "stratumHost": "pool.unomp.org",
+        "port": 8000, ## 改成自己喜欢的端口，放开云服务相应端口，不建议用80端口，容易跟其他服务冲突
+        "stratumHost": "pool.unomp.org", ## 改成自己的域名，无域名直接用IP
         "stats": {
             "updateInterval": 60,
             "historicalRetention": 43200,
@@ -176,19 +180,39 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
         "useBittrex": true
     }
 ```
+## 建立bcc.json
 
-
-配置bitcoin.json文件
-在pool_configs文件夹下还需要编辑好一个相应币种的json，对于比特币就是bitcoin.json。
 ```
-    "enabled": true,
-    "coin": "bitcoin.json",
+cd ~/unomp/coins
+vi bcc.json
+```
 
-    "auxes": [ ], ## 留空
-    "address": "12rP8udMb5ueJ4uzx8V7YHM9RMvcUKdrFa", ## 最后的币发到这里
+文件粘贴以下内容即可：
+
+```
+{
+    "name": "BitcoinCashBCC",
+    "symbol": "BCC",
+    "algorithm": "sha256"
+}
+```
+
+## BCC矿池设置
+
+在pool_configs文件夹下还需要编辑好一个相应币种的json，新建一个文件名bcc.json。
+
+地址是要改成自己矿池服务器生成的地址（并注意备份好私钥）：
+
+```
+{
+    "enabled": true,
+    "coin": "bcc.json",
+
+    "auxes": [ ], 
+    "address": "13y2PJGyYJLUU2TsPMZoxHcXT6iSLtFuhZ",  ## 挖出来的币先由这个地址保存，再按贡献度派发给矿工
 
     "rewardRecipients": {
-         "12rP8udMb5ueJ4uzx8V7YHM9RMvcUKdrFa" : 1.0 ## 将1%的币发给这个地址
+         "19uNEdfLYZmnLXQktRj6wBPCapqtdCu3dw" : 1.0  ## 将1%的币发给这个地址，作为矿池手续费收入
     },
 
     "paymentProcessing": {
@@ -198,8 +222,8 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
         "daemon": {
             "host": "127.0.0.1",
             "port": 8332,
-            "user": "slb", ## 与bitcoind的rpcuser和rpcpassword相对应
-            "password": "your-password" ## 你的密码
+            "user": "x",   ## 与bitcoind的rpcuser和rpcpassword相对应
+            "password": "x"
         }
     },
 
@@ -208,7 +232,7 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
             "diff": 8
         },
         "3008": {
-            "diff": 64, ## 可以调整初始难度值
+            "diff": 64,
             "varDiff": {
                 "minDiff": 8,
                 "maxDiff": 512,
@@ -218,7 +242,7 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
             }
         },
         "3256": {
-            "diff": 256
+            "diff": 4123456
         }
     },
 
@@ -226,8 +250,8 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
         {
             "host": "127.0.0.1",
             "port": 8332,
-            "user": "slb", ## 与bitcoind的rpcuser和rpcpassword相对应
-            "password": "your-password" ## 你的密码
+            "user": "x",  ## 与bitcoind的rpcuser和rpcpassword相对应
+            "password": "x"
         }
     ],
 
@@ -238,7 +262,7 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
         "disableTransactions": false
     },
 
-    "mposMode": { ## mpos我没有配置
+    "mposMode": {       ## mpos我没有配置
         "enabled": false,
         "host": "127.0.0.1",
         "port": 3306,
@@ -248,6 +272,9 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
         "checkPassword": false,
         "autoCreateWorker": false
     }
+}
+
+
 ```
 启动矿池
 如果配置无误，现在可以正常启动了。
@@ -255,7 +282,16 @@ config.json里有许多配置选项，不明白的保持默认值，我修改的
 nvm use 0.10.25
 node init.js
 ```
-然后在浏览器 访问服务器的8080端口，一个矿池就搭建完成了。
+然后在浏览器 访问服务器的8000端口，一个矿池就搭建完成了。
+
+用非root账号安装，导致启动失败，可以试下运行以下命令：
+
+```
+nvm use 0.10.25
+npm rebuild
+npm update
+node init.js
+```
 
 ## 后台运行矿池服务
 
@@ -263,7 +299,11 @@ node init.js
 
 * 第一步先检查bitcoind是否启动，检查区块同步
 
-* 第二步：source ~/.profile
+* 第二步：
+
+```
+source ~/.profile
+```
 
 * 第三步：后台运行矿池
 
@@ -273,13 +313,9 @@ nohup node init.js >/dev/null 2>&1 &
 ```
 
 
-
-
-
-
 # 三、矿工设置
 
-* stratum+tcp://ckpool.xuexizu.cn:3333
+* stratum+tcp://【矿池地址】:3256
 * 用户名：1HxpKABeYVKdKw9C175oJ5CYmA7YibDy6B (改为自己接收挖矿奖励的地址）
 * 密码：x（随意）
 
