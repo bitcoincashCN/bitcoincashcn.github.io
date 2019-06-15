@@ -204,6 +204,10 @@ Worker和Password均设置为x即可。
 ![图片描述](https://bitcoincashcn.github.io/pic/nicehash01.PNG)
 ![图片描述](https://bitcoincashcn.github.io/pic/nicehash02.PNG)
 
+* 矿池1：bccjp.xuexizu.cn 端口3256
+
+* 矿池2：btcc.xuexizu.cn 端口3256
+
 * 购买算力开挖
 
 进入【买家页面】-【市场】，如下图所示，选择算法以及上一步设置好的矿池，算力可大可小，单价按市场行情走（价格低租不到算力，价格高产生浪费），以图中为例，每天付0.0357BTC可以获得1PH算力一天（1PH=1000T），最低每天租用0.05PH（50T算力），也就是0.0357BTC可以租用20天的50T算力）；金额部分是设置总预算，比如输入0.357BTC，那么就可以跑200天50T算力。
