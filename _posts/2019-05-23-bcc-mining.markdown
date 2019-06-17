@@ -24,6 +24,11 @@ tags: BCH Clashic BCH原链 操作教程 挖矿 BCC
 * [百度网盘区块数据下载](https://pan.baidu.com/s/172fw2j-Kbwr_X3fhorzSKg)
 
 * 提取码：hqsf
+
+如果是新用户，不需要同步旧数据，可以下载修剪版（一键运行）
+
+* [一键运行精简版下载](https://pan.baidu.com/s/1jg9H_fzw6_yIltXcyG-5TQ)
+* 提取码：zxi1 
  
 
 **3.手动添加0.15.1版本的节点(可选)**
