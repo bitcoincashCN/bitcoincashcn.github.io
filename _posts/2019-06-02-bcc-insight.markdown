@@ -285,7 +285,7 @@ npm start
 
 ## 2、钱包设置BCH（BCC）支持
 
-![](https://bitcoincashcn.github.io/pic/copay01.PNG)
+![](https://bitcoincashcn.github.io/pic/copay01.png)
 
 ## 3、删掉自带的BTC钱包
 
@@ -299,13 +299,13 @@ npm start
 地址：http://go.xuexizu.cn:3232/bws/api
 地址：http://pay.xuexizu.cn:3232/bws/api
 
-![](https://bitcoincashcn.github.io/pic/copay02.PNG)
-![](https://bitcoincashcn.github.io/pic/copay03.PNG)
-![](https://bitcoincashcn.github.io/pic/copay04.PNG)
+![](https://bitcoincashcn.github.io/pic/copay02.png)
+![](https://bitcoincashcn.github.io/pic/copay03.png)
+![](https://bitcoincashcn.github.io/pic/copay04.png)
 
 可以自行设置密码和保护短语（后面备份时再设置亦可），然后点击创建钱包即可。
 钱包创建完成后，进入设置备份。
-![](https://bitcoincashcn.github.io/pic/copay05.PNG)
+![](https://bitcoincashcn.github.io/pic/copay05.png)
 
 ## 5、BCC钱包使用
 
@@ -313,8 +313,8 @@ Copay钱包的地址格式并非传统格式的地址，需要转换，复制钱
 
 https://explorer.viabtc.com/bch/tool/address-converter
 
-![](https://bitcoincashcn.github.io/pic/copay06.PNG)
-![](https://bitcoincashcn.github.io/pic/copay07.PNG)
+![](https://bitcoincashcn.github.io/pic/copay06.png)
+![](https://bitcoincashcn.github.io/pic/copay07.png)
 
 注意：
 
@@ -325,7 +325,7 @@ https://explorer.viabtc.com/bch/tool/address-converter
 
 发送成功如下所示：
 
-![](https://bitcoincashcn.github.io/pic/copay08.PNG)
+![](https://bitcoincashcn.github.io/pic/copay08.png)
 
 
 
@@ -333,10 +333,11 @@ https://explorer.viabtc.com/bch/tool/address-converter
 
 Copay除了用助记词备份钱包之外，还可以用导出钱包的方式进行备份，导出钱包需要设置密码，未来恢复钱包时需要输入这里设置的密码（否则恢复不了）。
 
-![](https://bitcoincashcn.github.io/pic/copay09.PNG)
+![](https://bitcoincashcn.github.io/pic/copay09.png)
 
 点击下载会弹出保存窗口：
-![](https://bitcoincashcn.github.io/pic/copay10.PNG) 
+
+![](https://bitcoincashcn.github.io/pic/copay10.png) 
 
 ## 7、钱包恢复
 
@@ -352,15 +353,15 @@ Copay除了用助记词备份钱包之外，还可以用导出钱包的方式进
 ## 8、用备份文件还原私钥的具体办法：
 
 1、	用记事本打开备份的json文件
-![](https://bitcoincashcn.github.io/pic/copay11.PNG) 
+![](https://bitcoincashcn.github.io/pic/copay11.png) 
 
 2、	用解码工具，将以上乱码粘贴到”Ciphertext”框里，输入备份时设置的密码，即可解码
 测试用的解码工具是：https://bitwiseshiftleft.github.io/sjcl/demo/
 
-![](https://bitcoincashcn.github.io/pic/copay12.PNG) 
+![](https://bitcoincashcn.github.io/pic/copay12.png) 
 
 3、解码后的文本里面的xPrivkey就是私钥
-![](https://bitcoincashcn.github.io/pic/copay13.PNG) 
+![](https://bitcoincashcn.github.io/pic/copay13.png) 
 4、直接用base58解码，Linux命令如下：
 
 ```
