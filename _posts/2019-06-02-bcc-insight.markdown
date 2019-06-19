@@ -296,15 +296,16 @@ npm start
 
 新建钱包的币种选择“BCH”
 （必须的）钱包服务地址填写（以下两个任何一个）：
-地址：http://go.xuexizu.cn:3232/bws/api
-地址：http://pay.xuexizu.cn:3232/bws/api
+
+1. 地址：http://go.xuexizu.cn:3232/bws/api
+2. 地址：http://pay.xuexizu.cn:3232/bws/api
 
 ![](https://bitcoincashcn.github.io/pic/copay02.png)
 ![](https://bitcoincashcn.github.io/pic/copay03.png)
 ![](https://bitcoincashcn.github.io/pic/copay04.png)
 
-可以自行设置密码和保护短语（后面备份时再设置亦可），然后点击创建钱包即可。
-钱包创建完成后，进入设置备份。
+可以自行设置密码和保护短语（后面备份时再设置亦可），然后点击创建钱包即可。钱包创建完成后，进入设置备份。
+
 ![](https://bitcoincashcn.github.io/pic/copay05.png)
 
 ## 5、BCC钱包使用
