@@ -25,6 +25,8 @@ unomp的主体代码是2014、2015年开发完成的，要依赖nodeljs，而且
 ```
 sudo apt-get update
 sudo apt-get install software-properties-common 
+sudo apt-get install npm
+sudo apt-get install pyhton
 sudo apt-get install build-essential libssl-dev npm nodejs nodejs-legacy
 curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
 source ~/.profile
