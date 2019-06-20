@@ -11,6 +11,8 @@ tags: BCH Clashic BCH原链 BCC
 
 # BCC是什么？
 
+![比特币现金原链的位置](https://bitcoincashcn.github.io/pic/fork.PNG)
+
 * BCC（BCH）就是吴忌寒等人主导的第一个比特币分叉币；2017年8月1号，是这个币的生日。BCC是客户端里面的名字，全称是Bitcoin Cash，也就是BCH。
 * 2017年11月13号，BCH硬分叉，吴忌寒等人及几大矿池把算力全部投入挖新链，按道理，原链永远不会再出块，就此被宣布死亡。
 * 但是，分叉的35小时之后，原链被挖出了一个块。之后三天内出了6个块，35天出了60个块，最长的一个块等了8天。
@@ -30,8 +32,6 @@ tags: BCH Clashic BCH原链 BCC
 * Clashic （twiiter直播号的称呼）
 * BCL （2017年11月份后开发者对它的称呼）
 * BCHC （见一些微博大V对它的称呼）
-
-![比特币现金原链的位置](https://bitcoincashcn.github.io/pic/fork.PNG)
 
 # BCC为什么会“复活”及其意义？
 
