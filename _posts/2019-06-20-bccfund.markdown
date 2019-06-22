@@ -22,7 +22,12 @@ tags: BCC 基金会 社区化 去中心化
 
 # 基金会托管账号公示
 
-
+* BCC：32n26gwnq7Jxcn7MFe5EQhgfDRaysuzJ7m
 
 # 基金会全球募捐计划
 
+募捐账号：
+
+* BCC：32n26gwnq7Jxcn7MFe5EQhgfDRaysuzJ7m
+
+后继将会开通BTC、BCH的募捐账号。
