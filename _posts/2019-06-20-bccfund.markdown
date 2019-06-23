@@ -24,6 +24,15 @@ tags: BCC 基金会 社区化 去中心化
 
 * BCC：32n26gwnq7Jxcn7MFe5EQhgfDRaysuzJ7m
 
+## 查看基金会转账流水记录的办法
+
+* 在区块浏览器查询以上地址
+* 使用全节点钱包（需下载全部数据），用命令importaddress导入以上地址，导入后本地可实时监测基金会全部转账记录
+
+```
+importaddress 32n26gwnq7Jxcn7MFe5EQhgfDRaysuzJ7m
+```
+
 # 基金会全球募捐计划
 
 募捐账号：
