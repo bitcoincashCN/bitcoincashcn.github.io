@@ -23,7 +23,7 @@ type: page
 
 * [Insign区块浏览器1](https://oldbcl.truevisionofsatoshi.com)
 * [Insign区块浏览器2](http://insight.xuexizu.cn:3001/)
-* [IQUIDUS区块浏览器2](http://jp.xuexizu.cn:8000/)
+* [IQUIDUS区块浏览器2](http://aliyun.xuexizu.cn:8000/)
 
 
 
