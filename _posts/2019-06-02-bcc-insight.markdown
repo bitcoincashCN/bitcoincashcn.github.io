@@ -98,8 +98,8 @@ git clone -b tag0.14.6-bitcore https://github.com/bitprim/bitcoin-abc.git
 cd bitcoin-abc
 ./autogen.sh
 ./configure
-make
-make install
+sudo make
+sudo make install
 ```
 
 # 三、安装bitcore（Insight区块浏览器）

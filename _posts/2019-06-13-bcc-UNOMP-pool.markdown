@@ -60,7 +60,7 @@ cd utils
 sudo ./install_server.sh
 ```
 
-make test时会有一点报错：
+make test时可能会有一点报错（不影响后继安装）：
 ```
 *** [err]: Active defrag in tests/unit/memefficiency.tcl
 defrag didn't stop.
@@ -71,6 +71,13 @@ make[1]: Leaving directory '/home/gotolab/unomp/redis-stable/src'
 Makefile:6: recipe for target 'test' failed
 make: *** [test] Error 2
 ```
+
+make test结束正常的提示是：
+
+```
+\o/ All tests passed without errors!
+```
+
 
 用下面两条命令启动和停止redis服务（现在启动就行了）：
 ```
