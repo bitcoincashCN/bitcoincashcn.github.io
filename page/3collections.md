@@ -37,16 +37,26 @@ type: page
 ## 矿池
 
 ### 矿池1
-* http://btcc.xuexizu.cn:8000/
+* http://btcc.xuexizu.cn:8888/
 - Port: 3008, Diff: 64
 - Port: 3032, Diff: 8
 - Port: 3256, Diff: 4123456
+- Nicehash设置：stratum+tcp://btcc.xuexizu.cn:3256
 
 ### 矿池2
 * http://bccjp.xuexizu.cn:8000/
 - Port: 3008, Diff: 64
 - Port: 3032, Diff: 8
 - Port: 3256, Diff: 4123456
+- Nicehash设置：stratum+tcp://bccjp.xuexizu.cn:3256
+
+### 矿池3
+* http://pool.bcc123.org:8000/
+- Port: 3008, Diff: 64
+- Port: 3032, Diff: 8
+- Port: 3256, Diff: 4123456
+- Nicehash设置：stratum+tcp://pool.bcc123.org:3256
+
 
 端口对应难度不同，用户名设置为自己的地址，密码随意。
 
