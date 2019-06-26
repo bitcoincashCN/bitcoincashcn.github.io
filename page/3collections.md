@@ -38,14 +38,14 @@ type: page
 
 ## 矿池
 
-### 矿池1
+### 矿池1（手续费1%）
 * http://btcc.xuexizu.cn:8888/
 - Port: 3008, Diff: 64
 - Port: 3032, Diff: 8
 - Port: 3256, Diff: 4123456
 - Nicehash设置：stratum+tcp://btcc.xuexizu.cn:3256
 
-### 矿池2
+### 矿池2（手续费1%）
 * http://bccjp.xuexizu.cn:8000/
 - Port: 3008, Diff: 64
 - Port: 3032, Diff: 8
