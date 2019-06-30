@@ -85,9 +85,11 @@ UAHF的具体操作方式：
 
 * 在一种BTC的客户端（Bitcoin Classic）上，直接迁移到BCH。
 * 该客户端的BTC消失了，然后变成BCH。
-* 因为他们认为BCH就是BTC。
+* 因为他们认为BCH(BCC)就是BTC。
 
-UAHF的具体实现版本Bitcoin Classic开发组，在没多久之后就发布了关门公告。
+UAHF的具体实现版本Bitcoin Classic开发组，在没多久之后就发布了[关门公告](https://bitcoinclassic.com/news/closing.html)。
+
+UAHF版本的下载：[Bitcoin Classic](https://github.com/bitcoinclassic/bitcoinclassic/releases)
 
 # BCC/BCH真正的煽动者
 
