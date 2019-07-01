@@ -30,6 +30,9 @@ type: page
 * [Bitcoin Unlimited Bitcoin cash release](https://github.com/BitcoinUnlimited/BitcoinUnlimited/releases/tag/bucash1.1.1.1)
 
 	BU Github：https://github.com/BitcoinUnlimited/BitcoinUnlimited/releases
+	BU Website：https://www.bitcoinunlimited.info/download
+	
+	注意：BUcash 1.1.1.1版本对应BCC。
 	
 
 ## 浏览器Explorer
