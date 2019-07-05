@@ -23,7 +23,7 @@ type: page
 
 * [Insign区块浏览器1](https://oldbcl.truevisionofsatoshi.com)
 * [Insign区块浏览器2](http://insight.bcc123.org:3001/)
-* [IQUIDUS区块浏览器1](http://explorer.bcc123.org:8000/)
+* [IQUIDUS区块浏览器1](http://explorer.bcc123.org:9000/)
 * [IQUIDUS区块浏览器2](http://insight.bcc123.org:8888/)
 
 
@@ -39,7 +39,7 @@ type: page
 ## 矿池
 
 ### 矿池1（手续费1%）
-* http://btcc.xuexizu.cn:8888/
+* http://btcc.xuexizu.cn:8000/
 - Port: 3008, Diff: 64
 - Port: 3032, Diff: 8
 - Port: 3256, Diff: 4123456
