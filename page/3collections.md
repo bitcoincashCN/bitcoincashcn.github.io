@@ -9,7 +9,7 @@ type: page
 * content
 {:toc}
 
-## 钱包
+## 钱包/节点
 
 * [Bitcoin ABC 0.15.1](https://download.bitcoinabc.org/0.15.1/)
 
@@ -17,7 +17,23 @@ type: page
     
     Bitcoin ABC Github：https://github.com/Bitcoin-ABC/bitcoin-abc/releases
     
-	注意：只有0.15.1版本对应BCH原链。
+	注意：只有0.15.1版本对应BCC。
+
+* [Bitcoin Classic 1.3.8](https://github.com/bitcoinclassic/bitcoinclassic/releases/tag/v1.3.8uahf) 
+
+	Bitcoin Classic Github：https://github.com/bitcoinclassic/bitcoinclassic/releases
+	
+* [Bitcoin XT Release G](https://github.com/bitcoinxt/bitcoinxt/releases/tag/v0.11G2)
+
+	Bitcoin XT Github：https://github.com/bitcoinxt/bitcoinxt/releases
+
+* [Bitcoin Unlimited Bitcoin cash release](https://github.com/BitcoinUnlimited/BitcoinUnlimited/releases/tag/bucash1.1.1.1)
+
+	BU Github：https://github.com/BitcoinUnlimited/BitcoinUnlimited/releases
+	BU Website：https://www.bitcoinunlimited.info/download
+	
+	注意：BUcash 1.1.1.1版本对应BCC。
+	
 
 ## 浏览器Explorer
 
@@ -25,9 +41,6 @@ type: page
 * [Insign区块浏览器2](http://insight.bcc123.org:3001/)
 * [IQUIDUS区块浏览器1](http://explorer.bcc123.org:9000/)
 * [IQUIDUS区块浏览器2](http://insight.bcc123.org:8888/)
-
-
-
 
 ## 社交媒体
 
