@@ -169,7 +169,7 @@ addnode=35.247.161.53:8333
 
 ```
 nvm use 6
-cd ~/mynode-bcc
+cd ~/mynode-abc
 bitcore start
 ```
 
@@ -178,7 +178,7 @@ bitcore start
 如果服务器重启，可用以下命令在后台运行bitcore
 ```
 nvm use 6
-cd ~/mynode-bcc
+cd ~/mynode-abc
 nohup bitcore start >/dev/null 2>&1 &
 ```
 

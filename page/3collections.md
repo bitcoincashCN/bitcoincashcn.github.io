@@ -39,7 +39,6 @@ type: page
 ## 浏览器Explorer
 
 * [Insign区块浏览器1](https://oldbcl.truevisionofsatoshi.com)
-* [Insign区块浏览器2](http://insight.bcc123.org:3001/)
 * [IQUIDUS区块浏览器1](http://explorer.bcc123.org:9000/)
 * [IQUIDUS区块浏览器2](http://insight.bcc123.org:8888/)
 
