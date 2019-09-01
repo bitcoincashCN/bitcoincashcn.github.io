@@ -208,7 +208,7 @@ sudo apt-get install certbot python-certbot-nginx
 sudo certbot --nginx
 ```
 
-*nginx启动反向代理
+* nginx启动反向代理
 
 ```
 vi /etc/nginx/sites-enabled/default
@@ -228,10 +228,10 @@ vi /etc/nginx/sites-enabled/default
         }
 ```
 
-*重启nginx
+* 重启nginx
 
 ```
-/etc/init.d/nginx restart
+sudo /etc/init.d/nginx restart
 ```
 
 # 四、安装BWS（钱包服务）
