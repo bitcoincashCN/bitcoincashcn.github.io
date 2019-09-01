@@ -40,7 +40,7 @@ type: page
 
 * [Insign区块浏览器1](https://oldbcl.truevisionofsatoshi.com)
 * [IQUIDUS区块浏览器1](http://explorer.bcc123.org:9000/)
-* [IQUIDUS区块浏览器2](http://insight.bcc123.org:8888/)
+* [Insign区块浏览器2](https://bcc55.bcc123.org/)
 
 ## 社交媒体
 
