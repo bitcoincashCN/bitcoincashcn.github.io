@@ -194,6 +194,45 @@ nohup bitcore start >/dev/null 2>&1 &
 
 ![](https://bitcoincashcn.github.io/pic/insight01.PNG)
 
+## 7.启用SSL（HTTPS）
+
+* 安装证书服务
+
+```
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install certbot python-certbot-nginx
+sudo certbot --nginx
+```
+
+*nginx启动反向代理
+
+```
+vi /etc/nginx/sites-enabled/default
+```
+
+注释掉原来404那一行，添加配置如下：
+
+```
+        location / {
+        #try_files $uri $uri/ =404;
+        proxy_pass http://localhost:3001;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        }
+```
+
+*重启nginx
+
+```
+/etc/init.d/nginx restart
+```
 
 # 四、安装BWS（钱包服务）
 
