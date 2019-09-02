@@ -79,13 +79,13 @@ sudo apt-get install libminiupnpc-dev
 sudo apt-get install libzmq3-dev
 ```
 
-* 5. 安装QT5库
+* 5.安装QT5库
 
 ```
 sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 ```
 
-* 6. 安装二维码库
+* 6.安装二维码库
 
 ```
 sudo apt-get install libqrencode-dev
