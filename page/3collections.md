@@ -38,15 +38,15 @@ type: page
 
 ## 浏览器Explorer
 
-* [Insign区块浏览器1](https://oldbcl.truevisionofsatoshi.com)
-* [IQUIDUS区块浏览器1](http://explorer.bcc123.org:9000/)
-* [Insign区块浏览器2](https://bcc55.bcc123.org/)
+* [Insign区块浏览器1](https://insight.bcc.zone)
+* [IQUIDUS区块浏览器](http://explorer.bcc123.org:9000)
+* [Insign区块浏览器2](https://bcc55.bcc123.org)
+* [Insign区块浏览器3](https://insight2.bcc.zone)
 
 ## 社交媒体
 
 * [匿名网站](http://bitcoinclashic.org/)
 * [第一个开发者的github](https://github.com/Bitcoin-Clashic)
-* [原链出块时的Twitter](https://twitter.com/BitcoinClashic)
 * [Discord中文社区](https://discord.gg/gZSjSax)
 
 ## 矿池
