@@ -76,7 +76,7 @@ BCC链条在2017年11月13号之前的名称为BCH/BCC（Bcash、BitcoinClashic�
 
 7.[freedman.club](https://freedman.club/en/bitcoin-clashic-are-you-serious/) **Bitcoin Clashic? Are you serious?**
 
-8.[investfeededge.com](https://investfeededge.com/bitcoin-cash-drama-continues-with-fork-upgrade-and-bitcoin-clashic/) **Bitcoin Cash Drama Continues with Fork Upgrade and “Bitcoin Clashic**
+8.[investfeededge.com](https://steemit.com/all/@rom76/bitcoin-cash-drama-continues-with-fork-upgrade-and-bitcoin-clashic) **Bitcoin Cash Drama Continues with Fork Upgrade and “Bitcoin Clashic**
 
 9.[cryptona.co](https://cryptona.co/emergence-bitcoin-clashic/) **The Emergence Of Bitcoin Clashic**
 
