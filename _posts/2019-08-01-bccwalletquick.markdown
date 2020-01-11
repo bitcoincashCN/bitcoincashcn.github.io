@@ -31,11 +31,21 @@ https://download.bitcoinabc.org/0.15.1/
 
 # 加速同步的办法
 
-在配置文件中添加节点
+## 在配置文件中添加节点
 
 下载后用记事本修改bitcoin.conf文件，添加以下配置
 
 ```
+addnode=node01.bcc.zone:8333
+addnode=node02.bcc.zone:8333
+addnode=node03.bcc.zone:8333
+addnode=node04.bcc.zone:8333
+addnode=node05.bcc.zone:8333
+addnode=node06.bcc.zone:8333
+addnode=node07.bcc.zone:8333
+addnode=node08.bcc.zone:8333
+addnode=node09.bcc.zone:8333
+addnode=node10.bcc.zone:8333
 addnode=34.87.123.94:8333
 addnode=34.84.45.131:8333
 addnode=101.200.202.108:8333
@@ -74,4 +84,10 @@ addnode=138.201.248.31:8333
 addnode=176.9.219.119:8434
 addnode=144.76.40.144:8333
 ```
+## 启动后，手动断开非BCC节点
 
+打开菜单“帮助”---“调试窗口”----“同伴”
+
+在其中“用户代理”这一列可以看到连接的各个节点的版本号，把除了Bitcoin ABC 0.14.6、0.15.0、0.15.1之外的节点连接断开，点击右键，直接选择“禁止1年”或“禁止1周”，这样省去与非BCC节点协商过程（BCC、BTC、BSV、BCH的节点会互相自动连接，但各自同步各自的区块），可以加速同步。
+
+对于很长时间没有同步的数据节点，如需要转账要同步数据，其实只要开着节点，它就会自动去寻找网络上的其他节点，自动完成同步，但可以用以上办法加速同步。
