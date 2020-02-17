@@ -17,7 +17,7 @@ type: page
     
     Bitcoin ABC Github：https://github.com/Bitcoin-ABC/bitcoin-abc/releases
     
-	注意：只有0.15.1版本对应BCC。
+	注意：0.14.6~0.15.1版本对应BCC。
 
 * [Bitcoin Classic 1.3.8](https://github.com/bitcoinclassic/bitcoinclassic/releases/tag/v1.3.8uahf) 
 
@@ -38,40 +38,36 @@ type: page
 
 ## 浏览器Explorer
 
-* [Insign区块浏览器1](https://insight.bcc.zone)
-* [IQUIDUS区块浏览器](http://explorer.bcc123.org:9000)
-* [Insign区块浏览器2](https://bcc55.bcc123.org)
-* [Insign区块浏览器3](https://insight2.bcc.zone)
+* [Insign区块浏览器](https://insight.bcc.zone)
+* [TokenView区块浏览器](https://bcc.tokenview.com/)
+* [RPC Explorer区块浏览器](http://explorer.bcc123.org:9000/)
 
 ## 社交媒体
 
 * [匿名网站](http://bitcoinclashic.org/)
 * [第一个开发者的github](https://github.com/Bitcoin-Clashic)
 * [Discord中文社区](https://discord.gg/gZSjSax)
+* [Telegram](https://t.me/joinchat/HKpw-A5NFxFsQG7uKHO5zA)
 
 ## 矿池
 
-### 矿池1（手续费1%~5%）
-* http://btcc.xuexizu.cn:8000/
-- Port: 3008, Diff: 64
-- Port: 3032, Diff: 8
-- Port: 3256, Diff: 4123456
-- Nicehash设置：stratum+tcp://btcc.xuexizu.cn:3256
+### 矿池1（手续费2%）
+* http://www.pow-coin.com/#bcc/stats
+- Nicehash设置：stratum+tcp://bcc.pow-coin.com:50607
+- Username：【Your BCC address】
+- Password：any
 
-### 矿池2（手续费1%~5%）
-* http://bccjp.xuexizu.cn:8000/
-- Port: 3008, Diff: 64
-- Port: 3032, Diff: 8
-- Port: 3256, Diff: 4123456
-- Nicehash设置：stratum+tcp://bccjp.xuexizu.cn:3256
+### 矿池2（手续费5%）
+* http://pool.bcc.zone:8000/
+- Nicehash设置：stratum+tcp://pool.bcc.zone:3032
+- Username：【Your BCC address】
+- Password：any
 
 ### 矿池3（手续费1%~5%）
-* http://pool.bcc123.org:8000/
-- Port: 3008, Diff: 64
-- Port: 3032, Diff: 8
-- Port: 3256, Diff: 4123456
-- Nicehash设置：stratum+tcp://pool.bcc123.org:3256
-
+* https://poolmin.com/
+- Nicehash设置：stratum+tcp://poolmin.com:3340
+- Username：【Your BCC address】
+- Password：any
 
 端口对应难度不同，用户名设置为自己的地址，密码随意。
 
