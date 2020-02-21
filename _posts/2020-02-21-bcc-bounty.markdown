@@ -19,39 +19,39 @@ BCH在2017年11月13号进行硬分叉升级，链条之后一分为二，即新
 
 * 1、实现TOP5交易所的上币BCC，恢复BCC在Coinbase、币安、Okex、火币、Bitfinex交易所的上币交易，奖励10万个BCC。
 
-** 2、实现TOP30交易所的上币BCC，恢复BCC在抹茶、比特儿、BTMX、中币、HitBTC、Gate.io交易所的上币交易，奖励5万个BCC。
+* 2、实现TOP30交易所的上币BCC，恢复BCC在抹茶、比特儿、BTMX、中币、HitBTC、Gate.io交易所的上币交易，奖励5万个BCC。
 
-** 3、实现在交易所开通BCC的衍生品交易功能，奖励1千个BCC。
+* 3、实现在交易所开通BCC的衍生品交易功能，奖励1千个BCC。
 
-** 4、实现在其它交易所的上币BCC，奖励5百个BCC。
+* 4、实现在其它交易所的上币BCC，奖励5百个BCC。
 
-** 5、实现在全球Top10比特币矿池开通BCC挖矿支持，奖励5千个BCC。
+* 5、实现在全球Top10比特币矿池开通BCC挖矿支持，奖励5千个BCC。
 
-** 6、实现在其它比特币矿池开通BCC挖矿支持，奖励1百个BCC。
+* 6、实现在其它比特币矿池开通BCC挖矿支持，奖励1百个BCC。
 
 ## 二、开发者奖励计划
 
 对开发BCC项目感兴趣的专业开发者，可以向基金会接洽成立开发者子基金，或接受社区捐赠，奖励条件及计划方案由开发者设计，一事一议。开发需求如下：
 
-** 1、集成智能合约侧链（双向锚定+合并挖矿），在RSK基础上实现。
+* 1、集成智能合约侧链（双向锚定+合并挖矿），在RSK基础上实现。
 
-** 2、集成MimbleWimble协议的侧链
+* 2、集成MimbleWimble协议的侧链
 
-** 3、任何比特币软分叉的BIP集成
+* 3、任何比特币软分叉的BIP集成
 
-** 4、与比特币合并共识层的以太坊分叉
+* 4、与比特币合并共识层的以太坊分叉
 
-** 5、任意共识机制的合并挖矿（PoS/DPoS/anyother BFT over PoW）
+* 5、任意共识机制的合并挖矿（PoS/DPoS/anyother BFT over PoW）
 
-** 6、各种基础设施及扩展应用
+* 6、各种基础设施及扩展应用
 
 ## 三、 联系方式：
 
-** Email：bitcoincashCN@gmail.com
-** Telegram：https://t.me/joinchat/HKpw-A5NFxFsQG7uKHO5zA
-** 社区网站：https://bcc.zone
-** 博客：https://bitcoincashcn.github.io/
-** 浏览器：https://bcc.tokenview.com/
+* Email：bitcoincashCN@gmail.com
+* Telegram：https://t.me/joinchat/HKpw-A5NFxFsQG7uKHO5zA
+* 社区网站：https://bcc.zone
+* 博客：https://bitcoincashcn.github.io/
+* 浏览器：https://bcc.tokenview.com/
 
 # BCC的FAQ
 
