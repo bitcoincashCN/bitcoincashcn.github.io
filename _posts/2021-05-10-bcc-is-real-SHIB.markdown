@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "BCC是真正的屎币"
+title:  "BCC是真正的屎币(SHIB)"
 date:   2021-05-10
 categories: 社区构建
 tags: BCH BCC Clashic BCH原链 DAO SHIB 屎币
